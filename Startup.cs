@@ -10,7 +10,7 @@ namespace becomingwebby
         public void Configure(IApplicationBuilder app)
         {
             app.Run(context => {
-                return context.Response.WriteAsync("Hello Everyone!");
+                return context.Response.WriteAsync("Hello People!");
             });
         }
     }
