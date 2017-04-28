@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.AspNetCore.Hosting;
+using becomingwebby;
 
 namespace hwapp
 {
@@ -6,13 +8,12 @@ namespace hwapp
     {
         static void Main(string[] args)
         {   
-            string name;
-
-            Console.WriteLine("Enter your name please.");
-
-            name = Console.ReadLine();
-
-            Console.WriteLine($"Hello {name}.");
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseStartup<Startup>()
+                .Build();
+            
+            host.Run();
         }
     }
 }
