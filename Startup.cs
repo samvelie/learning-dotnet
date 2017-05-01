@@ -24,7 +24,9 @@ namespace becomingwebby
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+        
             app.Run(context => {
                 return context.Response.WriteAsync("Hello People!");
             });
