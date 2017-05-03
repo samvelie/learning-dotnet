@@ -4,9 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using becomingwebby;
 
-namespace hwapp
+namespace becomingwebby
 {
     class Program
     {
