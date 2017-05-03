@@ -38,7 +38,6 @@ namespace becomingwebby
             {
                 app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();
-                
             }
             else
             {
